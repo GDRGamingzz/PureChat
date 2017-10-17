@@ -24,7 +24,6 @@ class PureChat extends PluginBase
 {
     /*
         PureChat by 64FF00 (Twitter: @64FF00)
-
           888  888    .d8888b.      d8888  8888888888 8888888888 .d8888b.   .d8888b.
           888  888   d88P  Y88b    d8P888  888        888       d88P  Y88b d88P  Y88b
         888888888888 888          d8P 888  888        888       888    888 888    888
@@ -77,8 +76,7 @@ class PureChat extends PluginBase
      * @param string $label
      * @param array $args
      */
-    public function onCommand(CommandSender $sender, Command $cmd, $label, array $args)
-    {
+    public function onCommand(CommandSender $sender, Command $cmd, $label, array $args) : bool{
         switch(strtolower($cmd->getName()))
         {
             case "setformat":
